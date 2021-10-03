@@ -1,0 +1,52 @@
+<div class="container-fluid">
+<div class="row ms-2 me-2">    
+    <div class="col-lg-3 col-md-3 col-sm-12">
+        <app-brand-logo></app-brand-logo>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <app-steps-timeline></app-steps-timeline>
+        <app-steps-title [stepTitle]="'Choose the best option'"></app-steps-title>
+        <span class="option-title">Create a new account:</span>
+        <div class="mt-3 mb-2">
+            <table>
+                <tbody>
+                    <tr class="option" [class.selected] = "option == 1">
+                        <td class="option-one">
+
+                        </td>
+                        <td>
+                            <p class="option-text">My baby is 0-72 months</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <span class="option-title">Or join a family or school:</span>
+        <div class="mt-3 mb-2">
+            <table>
+                <tbody>
+                    <tr class="option">
+                        <td class="option-two">
+
+                        </td>
+                        <td>
+                            <p class="option-text">I have a classroom code</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 offset-md-8 col-sm-12 mb-3 mt-4" style="text-align: right;">
+                <button class="btn btn-primary btn-lg float-right" type="submit">
+                    Continue
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12">
+    </div>
+</div>
+</div>

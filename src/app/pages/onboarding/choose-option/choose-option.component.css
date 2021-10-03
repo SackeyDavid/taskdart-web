@@ -1,0 +1,58 @@
+table {
+    width: 100%;
+}
+
+tr {
+    display: flex; 
+    flex-direction: row;
+}
+
+.option-one {
+    background: url(../../../../assets/images/mother.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    border-radius: .4rem;
+}
+
+.option-two {
+    background: url(../../../../assets/images/school.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+    border-radius: .4rem;
+}
+
+.btn-primary {
+    background-color: var(--kinedu-green);
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    width: auto;
+    text-transform: capitalize;
+  }
+  
+  .btn-primary:hover {
+    background-color: rgb(51,150,58);
+  }
+  
+  .btn-primary {
+    border-radius: 2rem;
+    font-size: .8rem;
+    padding: .7rem 2.8rem !important;
+  }
+  
+  .btn-check:focus + .btn-primary, .btn-primary:focus {
+      color: #fff;
+      background-color: var(--kinedu-green);
+      border-color: var(--kinedu-green-hover);
+  }
+  
+  .selected {
+      border: .125rem solid var(--kinedu-green) !important;
+  }

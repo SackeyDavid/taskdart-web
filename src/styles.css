@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Gotham rounded';
+    src: url(../../kinedu/src/assets/fonts/gotham-rounded/GothamRounded-Medium.otf) format("opentype");
+}
+
+:root {
+    --kinedu-blue: rgb(0, 134, 216);
+    --kinedu-green: rgb(69,201,78);
+    --kinedu-green-hover: rgb(51,150,58);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham rounded',"Arial Rounded MT Bold",Helvetica,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.option {
+    border: 1px solid #a8a8a863;
+    border-radius: .4rem;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    padding-left: 1.5%;
+    width: 100%;
+}
+
+.option:hover {
+    transform: translateY(-2px);
+    border: 1px solid var(--kinedu-green);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.option-title {
+    font-size: 16px;
+    color: rgb(27, 28, 29);
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.option-text {    
+    font-size: 15px;
+    color: rgb(0, 134, 216);
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 1.2rem 2rem !important;
+    margin-bottom: 0;
+}
