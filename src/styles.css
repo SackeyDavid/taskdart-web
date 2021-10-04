@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
     font-family: 'Gotham rounded';
-    src: url(../../kinedu/src/assets/fonts/gotham-rounded/GothamRounded-Medium.otf) format("opentype");
+    src: url(./assets/fonts/gotham-rounded/GothamRounded-Medium.otf) format("opentype");
 }
 
 :root {
