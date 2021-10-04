@@ -1,99 +1,101 @@
-.timeline {    
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .li {
-    transition: all 200ms ease-in;
-  }
-  .timestamp {
-    margin-bottom: 20px;
-    padding: 0px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 100;
-  }
-  .status {
-    padding: 0px 40px;
-    display: flex;
-    justify-content: center;
-    border-top: 2px solid #D6DCE0;
-    position: relative;
-    transition: all 200ms ease-in ; 
-  }
-    h4 {
-      font-weight: 600;
-  }
-    h4:before {
-      content: '';
-      width: 25px;
-      height: 25px;
-      background-color: white;
-      border-radius: 25px;
-      border: 1px solid #ddd;
-      position: absolute;
-      top: -15px;
-      left: 42%;
-      transition: all 200ms ease-in; 
-  }
-  .li.complete
-    .status {
-      border-top: 2px solid #66DC71;
-    }
-      :before {
-        background-color: #66DC71;
-        border: none;
-        transition: all 200ms ease-in; 
-      }
-      h4 {
-        color: #66DC71;
-      }
-  @media (min-device-width: 320px) and (max-device-width: 700px) {
-    .timeline {
-      list-style-type: none;
-      display: block;
-  }
-    .li {
-      transition: all 200ms ease-in;
-      display: flex;
-      width: inherit;
-    }
-    .timestamp {
-      width: 100px;
-  }
-    .status:before {
-        left: -8%;
-        top: 30%;
-        transition: all 200ms ease-in; 
-      }
-  }
-  
-   /* Layout stuff */
-  html,body {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    font-family: 'Titillium Web', sans serif;
-    color: #758D96;
-  }
-  button {
-    position: absolute;
-    width: 100px;
-    min-width: 100px;
-    padding: 20px;
-    margin: 20px;
-    font-family: 'Titillium Web', sans serif;
-    border: none;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-  }
-  #toggleButton {
-    position: absolute;
-    left: 50px;
-    top: 20px;
-    background-color: #75C7F6;
-  }
+.container{
+  width: 100%;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+ul {
+  padding-left: 0rem;
+}
+.timeline{
+  counter-reset: none;
+  position: relative;
+}
+
+.timeline li{
+  list-style: none;
+  float: left;
+  width: 33.3333%;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+}
+
+ul:nth-child(1){
+  color: #dddbdb;
+  font-size: 12px;
+}
+
+.timeline li:before{
+  content: '';
+  width: 50px;
+  height: 50px;
+  border: 3px solid #dddbdb;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 auto 10px auto;
+  background: aliceblue;
+  color: #000;
+  transition: all ease-in-out .3s;
+  cursor: pointer;
+}
+
+.timeline li:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #dddbdb;
+  top: 25px;
+  left: -50%;
+  z-index: -999;
+  transition: all ease-in-out .3s;
+}
+
+.timeline li:first-child:after{
+  content: none;
+}
+
+.timeline li.active-tl{
+  color: var(--kinedu-black);
+}
+
+.timeline li.active-tl:before{
+  background: url(../../../../assets/images/avatar.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: aliceblue;
+  border-radius: 50%;
+  border: 3px solid var(--kinedu-blue);
+  color: #F1F1F1;
+}
+
+.timeline li.active-tl + li:after{
+  background: var(--kinedu-blue);
+}
+
+
+.timeline li.parents-profile:before{
+  background: url(../../../../assets/images/foster-mother.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: aliceblue;
+  border-radius: 50%;
+  color: #F1F1F1;
+}
+
+
+.timeline li.babys-profile:before{
+  background: url(../../../../assets/images/baby-boy.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: aliceblue;
+  border-radius: 50%;
+  color: #F1F1F1;
+}
