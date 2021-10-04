@@ -8,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class ChooseOptionComponent implements OnInit {
 
   option = 1;
-  
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  chooseOption(choice: string) {
+    this.option = parseInt(choice);
   }
 
 }
