@@ -12,4 +12,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openPlayStore() {
+    window.open('https://play.google.com/store/apps/details?id=com.daskdart.android', '_blank');
+  }
 }
