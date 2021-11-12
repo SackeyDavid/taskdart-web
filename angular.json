@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "taskdart-web": {
+    "kinedu": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/taskdart-web",
+            "outputPath": "dist/kinedu",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +28,6 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
               "src/styles.css"
             ],
             "scripts": [
@@ -42,7 +41,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500mb",
-                  "maximumError": "1gb"
+                  "maximumError": "1Gb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -73,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "taskdart-web:build:production"
+              "browserTarget": "kinedu:build:production"
             },
             "development": {
-              "browserTarget": "taskdart-web:build:development"
+              "browserTarget": "kinedu:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "taskdart-web:build"
+            "browserTarget": "kinedu:build"
           }
         },
         "test": {
@@ -107,5 +106,5 @@
       }
     }
   },
-  "defaultProject": "taskdart-web"
+  "defaultProject": "kinedu"
 }
