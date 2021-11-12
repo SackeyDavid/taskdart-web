@@ -15,7 +15,7 @@
   "dependencies": {
     "@angular/animations": "~12.2.0",
     "@angular/common": "~12.2.0",
-    "@angular/compiler": "~12.2.0",
+    "@angular/cli": "^13.0.2",
     "@angular/compiler-cli": "^12.2.13",
     "@angular/core": "^13.0.1",
     "@angular/forms": "~12.2.0",
@@ -29,9 +29,9 @@
     "popper.js": "^1.16.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
-    "typescript": "~4.3.5",
     "update": "^0.7.4",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "typescript": "^4.3.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.4",
@@ -45,7 +45,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.3.5"
+    "typescript": "^4.3.5"
   },
   "engines": {
     "node": "14.17.0",
