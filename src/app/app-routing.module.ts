@@ -2,8 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router'
 import { ChooseOptionComponent } from './pages/onboarding/choose-option/choose-option.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  {
+    path: '', component: HomeComponent
+  },
   { 
     path: 'ob', 
     children: [
@@ -13,7 +17,7 @@ const routes: Routes = [
       },
     ]
   },
-  { path: '', redirectTo: '/ob/choose-option', pathMatch: 'full' },
+  // { path: '', redirectTo: '/ob/choose-option', pathMatch: 'full' },
 ]
 
 @NgModule({
